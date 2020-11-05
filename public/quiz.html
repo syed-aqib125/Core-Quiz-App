@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUIZ APP</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+    </style>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAJIC3g32SitqvIKXoM_y1njwu7YYLb0Gg",
+      authDomain: "quiz-app-a1459.firebaseapp.com",
+      databaseURL: "https://quiz-app-a1459.firebaseio.com",
+      projectId: "quiz-app-a1459",
+      storageBucket: "quiz-app-a1459.appspot.com",
+      messagingSenderId: "251262775000",
+      appId: "1:251262775000:web:de7883380467ae2de3b1ad",
+      measurementId: "G-2M16J44H73",
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="quiz">
+      <div class="quiz_header">
+        <h4 class="quiz_user">Welcome! <span class="name"></span></h4>
+      </div>
+      <div class="quiz_body">
+        <div id="questions">
+          <!-- <h2>Q1. What is the full form of RAM ?</h2>
+
+          <ul class="option_group">
+            <li class="option">option1</li>
+            <li class="option">option2</li>
+            <li class="option">option3</li>
+            <li class="option">option4</li>
+          </ul> -->
+        </div>
+        <button class="btn-next" onclick="next()">Next Question</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="JS/app.js"></script>
+
+
+</html>
